@@ -1,0 +1,19 @@
+{
+  "name": "Sierpinski Fraktal",
+  "short_name": "Sierpinski",
+  "description": "Interaktives Sierpinski-Dreieck – Chaos-Spiel mit 10.000 Iterationen",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "/sierpinski/",
+  "scope": "/sierpinski/",
+  "icons": [
+    {
+      "src": "/sierpinski/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

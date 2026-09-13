@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="black"/>
+  <!-- Sierpinski triangle outline, three colored sub-triangles -->
+  <polygon points="256,40 472,432 40,432" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <!-- bottom-left sub-triangle (red) -->
+  <polygon points="148,432 256,236 40,432" fill="#ff4d4d" opacity="0.85"/>
+  <!-- bottom-right sub-triangle (blue) -->
+  <polygon points="256,236 472,432 364,432" fill="#4daaff" opacity="0.85"/>
+  <!-- top sub-triangle (green) -->
+  <polygon points="256,40 364,236 148,236" fill="#4dff91" opacity="0.85"/>
+</svg>

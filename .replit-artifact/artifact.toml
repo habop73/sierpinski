@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Sierpinski Fraktal"
+version = "1.0.0"
+id = "artifacts/sierpinski"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24770
+
+[services.development]
+run = "pnpm --filter @workspace/sierpinski run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sierpinski", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sierpinski/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24770"
+BASE_PATH = "/"
